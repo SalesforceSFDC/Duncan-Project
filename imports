@@ -1,0 +1,32 @@
+package com.expeditelabs.lendingqb
+
+import com.expeditelabs.lendingqb.models.{
+  BorrowerCoborrowerPair, Derogatory, Liability, RateRequest}
+import com.expeditelabs.lendingqb.responses.PullCreditReportResponse
+import com.expeditelabs.logs.labels.{Events, Topics}
+import com.expeditelabs.thrift.{events => eventsThrift, scala => thrift}
+import com.twitter.finagle.stats.StatsReceiver
+import com.twitter.util.{Future, Try}
+
+package com.clara.clowncar.processor
+
+import com.clara.kafka.consumer.FilteringProcessor
+import com.expeditelabs.analytics.services.LoanArchiveLibrary
+import com.expeditelabs.logs.labels.{Events, Topics}
+import com.expeditelabs.salesforce.client.SalesforceClient
+import com.expeditelabs.thrift.events
+import com.expeditelabs.util.AsynchronousWorkQueueFactory
+import com.expeditelabs.util.rollbar.NullExceptionNotifier
+import com.sforce.soap.enterprise.sobject
+import com.twitter.finagle.stats.StatsReceiver
+import com.twitter.logging.Logger
+import com.twitter.util.Future
+
+package com.expeditelabs.lendingqb
+
+import com.expeditelabs.lendingqb.gen.loan.ClearModifiedLoansListByAppCodeResponse
+import com.expeditelabs.lendingqb.models._
+import com.expeditelabs.lendingqb.responses._
+import com.expeditelabs.thrift.{events => eventsThrift, lqb => lqbThrift, scala => thrift}
+import com.twitter.finagle.stats.StatsReceiver
+import com.twitter.util.{Closable, Future, Time}
